@@ -16,6 +16,7 @@ public class Session {
         this.ctx=ctx;
         prefs=ctx.getSharedPreferences("myapp",Context.MODE_PRIVATE);
         editor=prefs.edit();
+
     }
 
     public void setLoggedIn(boolean loggedIn){
