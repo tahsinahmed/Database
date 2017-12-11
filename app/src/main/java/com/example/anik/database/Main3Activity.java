@@ -147,6 +147,11 @@ public class Main3Activity extends AppCompatActivity {
                     Water tab3 =new Water();
                     return tab3;
 
+                case 3:
+                    Speed tab4=new Speed();
+                    return tab4;
+
+
                 default:
                     return null;
             }
@@ -155,18 +160,20 @@ public class Main3Activity extends AppCompatActivity {
         @Override
         public int getCount() {
             // Show 3 total pages.
-            return 3;
+            return 4;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "counter";
+                    return "count";
                 case 1:
                     return "Sleep";
                 case 2:
                     return "Water";
+                case 3:
+                    return "Speed";
             }
             return null;
         }
